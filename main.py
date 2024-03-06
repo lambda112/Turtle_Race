@@ -6,8 +6,9 @@ screen = t.Screen()
 screen.bgcolor("black")
 screen.setup(width = 800, height = 400)
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-y_cord = -100
+screen.textinput(title = "Turtle Racer", prompt= f"What turtle will win the race? {colors}: ")
 
+y_cord = -100
 for turtle_color in colors:
     racer = t.Turtle(shape = "turtle")
     racer.color(turtle_color)
